@@ -1,11 +1,13 @@
+import ClassComponentExample from "../components/ClassComponentExample";
 import ProductCart from "../components/ProductCart";
 export default function App() {
   return (
     <div>
-      <ProductCart />
-      <ProductCart />
+      <ProductCart name="Macbook Pro" price="140" />
+      <ProductCart name="Macbook Air" price="100" />
+      <ProductCart name="Macbook Ultra" price="160" />
 
-      <h1>hello</h1>
+      <ClassComponentExample msg="hello from class component" />
     </div>
   );
 }
