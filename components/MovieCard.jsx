@@ -16,7 +16,7 @@ export const MovieCard = (props) => {
             <p className="card-text">{overview.slice(0, 100)}...</p>
             <a
               href={`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`}
-              className="btn btn-primary rounded-0"
+              className="btn btn-info rounded-0"
             >
               detailes
             </a>
