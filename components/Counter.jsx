@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 function Counter() {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(0);
+  const [count1, setCount1] = useState(0);
 
   function countPlus() {
-    setCount(count + 3);
+    setCount(count + 1);
+    setCount1(count1 + 1);
+    console.log(count1);
   }
   function countMinus() {
     setCount(count > 0 ? count - 1 : 0);
   }
+  useEffect(() => {
+    console.log("state is changed");
+  }, [count1]);
 
   return (
     <div>
